@@ -27,7 +27,6 @@ export default {
       if (this.init) this.$router.push("/search");
 
       this.$store.commit("searchTitle/setTitle", this.title);
-      console.log(this.title, this.$store.state.searchTitle.title);
       this.$store.dispatch("movies/getMovies", {
         title: this.title,
         page: 1,

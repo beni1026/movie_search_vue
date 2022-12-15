@@ -57,7 +57,6 @@ export default {
   },
   methods: {
     fetchMoreMovies(next) {
-      console.log(this.$store.state.searchTitle.title);
       this.$store.dispatch("movies/getMovies", {
         title: this.title,
         page: next
