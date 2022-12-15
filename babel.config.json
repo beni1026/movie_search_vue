@@ -1,0 +1,11 @@
+{
+  "presets": ["@babel/preset-env"], //전역이 오염
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3
+      }
+    ]
+  ]
+}
